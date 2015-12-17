@@ -15,7 +15,12 @@
 @implementation ViewController
 
 - (IBAction) adiciona {
-    NSLog(@"Clicou no botão %@", [self.nome text]);
+    NSString *nome = [self.nome text];
+    NSString *endereco = [self.endereco text];
+    NSString *site = [self.site text];
+    NSString *telefone = [self.telefone text];
+    NSString *email = [self.email text];
+    NSLog(@"Dados do Contato: %@ %@ %@ %@ %@", nome, endereco, site, telefone, email);
 }
 
 @end

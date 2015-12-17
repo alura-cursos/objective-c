@@ -11,6 +11,10 @@
 @interface ViewController : UIViewController
 
 @property IBOutlet UITextField *nome;
+@property IBOutlet UITextField *telefone;
+@property IBOutlet UITextField *endereco;
+@property IBOutlet UITextField *site;
+@property IBOutlet UITextField *email;
 
 @end
 
