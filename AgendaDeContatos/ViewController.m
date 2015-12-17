@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Contato.h"
 
 @interface ViewController ()
 
@@ -15,12 +16,13 @@
 @implementation ViewController
 
 - (IBAction) adiciona {
-    NSString *nome = self.nome.text;
-    NSString *endereco = self.endereco.text;
-    NSString *site = self.site.text;
-    NSString *telefone = self.telefone.text;
-    NSString *email = self.email.text;
-    NSLog(@"Dados do Contato: %@ %@ %@ %@ %@", nome, endereco, site, telefone, email);
+    Contato *contato = [Contato new];
+    contato.nome = self.nome.text;
+    contato.endereco = self.endereco.text;
+    contato.site = self.site.text;
+    contato.telefone = self.telefone.text;
+    contato.email = self.email.text;
+    NSLog(@"Dados do Contato: %@ %@ %@ %@ %@", contato.nome, contato.endereco, contato.site, contato.telefone, contato.email);
 }
 
 @end

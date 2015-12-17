@@ -16,6 +16,7 @@
 		830360211C23106C00CAA428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8303601F1C23106C00CAA428 /* LaunchScreen.storyboard */; };
 		8303602C1C23106C00CAA428 /* AgendaDeContatosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8303602B1C23106C00CAA428 /* AgendaDeContatosTests.m */; };
 		830360371C23106D00CAA428 /* AgendaDeContatosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830360361C23106D00CAA428 /* AgendaDeContatosUITests.m */; };
+		830360461C23248700CAA428 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 830360451C23248700CAA428 /* Contato.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		830360321C23106D00CAA428 /* AgendaDeContatosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaDeContatosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		830360361C23106D00CAA428 /* AgendaDeContatosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgendaDeContatosUITests.m; sourceTree = "<group>"; };
 		830360381C23106D00CAA428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830360441C23248700CAA428 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
+		830360451C23248700CAA428 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				830360121C23106C00CAA428 /* AppDelegate.m */,
 				830360141C23106C00CAA428 /* ViewController.h */,
 				830360151C23106C00CAA428 /* ViewController.m */,
+				830360441C23248700CAA428 /* Contato.h */,
+				830360451C23248700CAA428 /* Contato.m */,
 				830360171C23106C00CAA428 /* Main.storyboard */,
 				8303601D1C23106C00CAA428 /* Assets.xcassets */,
 				8303601F1C23106C00CAA428 /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830360461C23248700CAA428 /* Contato.m in Sources */,
 				830360161C23106C00CAA428 /* ViewController.m in Sources */,
 				8303601C1C23106C00CAA428 /* AgendaDeContatos.xcdatamodeld in Sources */,
 				830360131C23106C00CAA428 /* AppDelegate.m in Sources */,
