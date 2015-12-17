@@ -34,6 +34,8 @@
     contato.telefone = self.telefone.text;
     contato.email = self.email.text;
     
+    NSLog(@"%@", contato);
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
