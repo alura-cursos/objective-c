@@ -8,6 +8,7 @@
 
 #import "ListaContatosViewController.h"
 #import "ViewController.h"
+#import "Contato.h"
 
 @interface ListaContatosViewController ()
 
@@ -34,6 +35,23 @@
     form.contatos = self.contatos;
     
     [self.navigationController pushViewController:form animated:YES];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.contatos.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    
+    Contato *contato = self.contatos[indexPath.row];
+    cell.textLabel.text = contato.nome;
+    
+    return cell;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
 }
 
 @end
