@@ -15,7 +15,7 @@
 @implementation ViewController
 
 - (IBAction) adiciona {
-    NSLog(@"Clicou no botão");
+    NSLog(@"Clicou no botão %@", [self.nome text]);
 }
 
 @end
