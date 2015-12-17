@@ -7,6 +7,7 @@
 //
 
 #import "ListaContatosViewController.h"
+#import "ViewController.h"
 
 @interface ListaContatosViewController ()
 
@@ -14,6 +15,19 @@
 
 @implementation ListaContatosViewController
 
+-(ListaContatosViewController *)init {
+    self = [super init];
+    if(self) {
+        UIBarButtonItem *botaoForm = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(exibeFormulario)];
+        self.navigationItem.rightBarButtonItem = botaoForm;
+    }
+    return self;
+}
 
+-(void) exibeFormulario {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *form = [storyboard instantiateViewControllerWithIdentifier:@"Form-Contato"];
+    [self.navigationController pushViewController:form animated:YES];
+}
 
 @end
