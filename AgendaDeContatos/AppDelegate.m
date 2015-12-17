@@ -18,7 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     ListaContatosViewController *lista = [ListaContatosViewController new];
-    self.window.rootViewController = lista;
+    UINavigationController *navLista = [[UINavigationController alloc] initWithRootViewController:lista];
+    
+    self.window.rootViewController = navLista;
     return YES;
 }
 
