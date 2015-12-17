@@ -33,8 +33,10 @@
     contato.site = self.site.text;
     contato.telefone = self.telefone.text;
     contato.email = self.email.text;
+
+    [self.contatos addObject:contato];
     
-    NSLog(@"%@", contato);
+    NSLog(@"%@", self.contatos);
     
     [self.navigationController popViewControllerAnimated:YES];
 }
