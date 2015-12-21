@@ -34,9 +34,9 @@
     contato.telefone = self.telefone.text;
     contato.email = self.email.text;
 
-    [self.contatos addObject:contato];
+    [self.dao.contatos addObject:contato];
     
-    NSLog(@"%@", self.contatos);
+    NSLog(@"%@", self.dao.contatos);
     
     [self.navigationController popViewControllerAnimated:YES];
 }

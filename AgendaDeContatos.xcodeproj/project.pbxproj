@@ -18,6 +18,7 @@
 		830360371C23106D00CAA428 /* AgendaDeContatosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830360361C23106D00CAA428 /* AgendaDeContatosUITests.m */; };
 		830360461C23248700CAA428 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 830360451C23248700CAA428 /* Contato.m */; };
 		830360491C2335DE00CAA428 /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830360481C2335DE00CAA428 /* ListaContatosViewController.m */; };
+		8303604C1C285BC900CAA428 /* ContatoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 8303604B1C285BC900CAA428 /* ContatoDao.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		830360451C23248700CAA428 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
 		830360471C2335DE00CAA428 /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
 		830360481C2335DE00CAA428 /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
+		8303604A1C285BC900CAA428 /* ContatoDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoDao.h; sourceTree = "<group>"; };
+		8303604B1C285BC900CAA428 /* ContatoDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDao.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				830360151C23106C00CAA428 /* ViewController.m */,
 				830360471C2335DE00CAA428 /* ListaContatosViewController.h */,
 				830360481C2335DE00CAA428 /* ListaContatosViewController.m */,
+				8303604A1C285BC900CAA428 /* ContatoDao.h */,
+				8303604B1C285BC900CAA428 /* ContatoDao.m */,
 				830360441C23248700CAA428 /* Contato.h */,
 				830360451C23248700CAA428 /* Contato.m */,
 				830360171C23106C00CAA428 /* Main.storyboard */,
@@ -286,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8303604C1C285BC900CAA428 /* ContatoDao.m in Sources */,
 				830360461C23248700CAA428 /* Contato.m in Sources */,
 				830360491C2335DE00CAA428 /* ListaContatosViewController.m in Sources */,
 				830360161C23106C00CAA428 /* ViewController.m in Sources */,

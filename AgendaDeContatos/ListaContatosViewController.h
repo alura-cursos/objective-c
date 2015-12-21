@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ContatoDao.h"
 
 @interface ListaContatosViewController : UITableViewController
 
-@property NSMutableArray *contatos;
+@property ContatoDao *dao;
 
 @end
