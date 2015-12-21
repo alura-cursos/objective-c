@@ -25,6 +25,7 @@
         self.navigationItem.title = @"Contatos";
         
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
+        self.linhaSelecionada = -1;
         
         self.dao = [ContatoDao contatoDaoInstance];
     }
@@ -83,6 +84,15 @@
 
 - (void) contatoAdicionado:(Contato *) contato {
     self.linhaSelecionada = [self.dao indiceDoContato: contato];
+    NSString *mensagem = [NSString stringWithFormat:@"Contato %@ adicionado com sucesso", contato.nome];
+    
+    UIAlertController *alerta = [UIAlertController alertControllerWithTitle:@"Contato adicionado" message:mensagem preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel
+                                            handler:nil];
+    [alerta addAction:ok];
+    
+    [self presentViewController:alerta animated:YES completion:nil];
+    
     NSLog(@"Adicionado: %@", contato);
 }
 
@@ -94,6 +104,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.linhaSelecionada inSection:0];
     [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+    self.linhaSelecionada = -1;
 }
 
 @end
