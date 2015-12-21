@@ -40,9 +40,17 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.contatoSelecionado = [self.dao contatoDoIndice:indexPath.row];
+    [self exibeFormulario];
+}
+
 -(void) exibeFormulario {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController *form = [storyboard instantiateViewControllerWithIdentifier:@"Form-Contato"];
+    if (self.contatoSelecionado) {
+        form.contato = self.contatoSelecionado;
+    }
     
     [self.navigationController pushViewController:form animated:YES];
 }
