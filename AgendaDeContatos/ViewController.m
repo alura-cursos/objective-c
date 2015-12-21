@@ -34,7 +34,7 @@
     contato.telefone = self.telefone.text;
     contato.email = self.email.text;
 
-    [self.dao.contatos addObject:contato];
+    [self.dao adicionaContato:contato];
     
     NSLog(@"%@", self.dao.contatos);
     

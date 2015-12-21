@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Contato.h"
 
 @interface ContatoDao : NSObject
 
 @property NSMutableArray *contatos;
+
+-(void) adicionaContato: (Contato *) contato;
+-(NSInteger) total;
+-(Contato *) contatoDoIndice: (NSInteger) indice;
 
 @end
