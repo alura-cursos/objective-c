@@ -16,5 +16,6 @@
 -(void) adicionaContato: (Contato *) contato;
 -(NSInteger) total;
 -(Contato *) contatoDoIndice: (NSInteger) indice;
++(ContatoDao *) contatoDaoInstance;
 
 @end

@@ -22,6 +22,8 @@
         
         self.navigationItem.rightBarButtonItem = botao;
         self.navigationItem.title = @"Novo Contato";
+        
+        self.dao = [ContatoDao contatoDaoInstance];
     }
     return self;
 }
