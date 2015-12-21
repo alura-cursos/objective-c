@@ -31,6 +31,10 @@ static ContatoDao *defaultDao = nil;
     [self.contatos addObject:contato];
 }
 
+- (void)removeContato:(Contato *)contato {
+    [self.contatos removeObject:contato];
+}
+
 - (NSInteger)total {
     return self.contatos.count;
 }
@@ -39,8 +43,8 @@ static ContatoDao *defaultDao = nil;
     return self.contatos[indice];
 }
 
-- (void)removeContato:(Contato *)contato {
-    [self.contatos removeObject:contato];
+- (NSInteger)indiceDoContato:(Contato *)contato {
+    return [self.contatos indexOfObject:contato];
 }
 
 @end
