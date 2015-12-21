@@ -48,6 +48,8 @@
 -(void) exibeFormulario {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController *form = [storyboard instantiateViewControllerWithIdentifier:@"Form-Contato"];
+    form.delegate = self;
+    
     if (self.contatoSelecionado) {
         form.contato = self.contatoSelecionado;
     }
@@ -77,6 +79,14 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.tableView reloadData];
+}
+
+- (void) contatoAdicionado:(Contato *) contato {
+    NSLog(@"Adicionado: %@", contato);
+}
+
+- (void) contatoAtualizado:(Contato *) contato {
+    NSLog(@"Atualizado: %@", contato);
 }
 
 @end

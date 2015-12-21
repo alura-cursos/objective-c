@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "ContatoDao.h"
 
-@interface ListaContatosViewController : UITableViewController
+@interface ListaContatosViewController : UITableViewController<ViewControllerDelegate>
 
 @property ContatoDao *dao;
 @property Contato *contatoSelecionado;
