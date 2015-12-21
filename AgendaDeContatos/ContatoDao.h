@@ -17,5 +17,6 @@
 -(NSInteger) total;
 -(Contato *) contatoDoIndice: (NSInteger) indice;
 +(ContatoDao *) contatoDaoInstance;
+-(void) removeContato: (Contato *) contato;
 
 @end
